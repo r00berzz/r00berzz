@@ -1,4 +1,4 @@
-local RayfieldURL = 'https://raw.githubusercontent.com/r00berzz/r00berzz-hub/main/mon%20script.lua'
+local RayfieldURL = 'https://raw.githubusercontent.com/r00berzz/r00berzz/raw/r00berzz.lua'
 local success, RayfieldScript = pcall(function() return game:HttpGet(RayfieldURL) end)
 
 if success and RayfieldScript then
