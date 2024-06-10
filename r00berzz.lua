@@ -3,11 +3,12 @@ local success, RayfieldScript = pcall(function() return game:HttpGet(RayfieldURL
 
 if success and RayfieldScript then
     print("Successfully got the Rayfield script")
-    local success, Rayfield = pcall(function() return loadstring(RayfieldScript)() end)
+    local loadSuccess, Rayfield = pcall(function() return loadstring(RayfieldScript)() end)
     
-    if success and Rayfield then
+    if loadSuccess and Rayfield then
         print("Successfully loaded Rayfield")
-        local success, Window = pcall(function() return Rayfield:CreateWindow({
+        
+        local WindowSuccess, Window = pcall(function() return Rayfield:CreateWindow({
             Name = "Je n'ai pas de nom pour le hub",
             LoadingTitle = "r00berzz hub",
             LoadingSubtitle = "by r00berzz",
@@ -33,7 +34,7 @@ if success and RayfieldScript then
             }
         }) end)
         
-        if success and Window then
+        if WindowSuccess and Window then
             print("Successfully created window")
             
             local MainTab = Window:CreateTab("🏠 Home", nil)
