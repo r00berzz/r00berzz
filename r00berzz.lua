@@ -1,4 +1,4 @@
-local Rayfield = loadstring(game:HttpGet('https://[Log in to view URL]'))()
+local Rayfield = loadstring(game:HttpGet('https://raw.githubusercontent.com/r00berzz/r00berzz/raw/r00berzz.lua'))()
 
 local Window = Rayfield:CreateWindow({
    Name = "Je n'ai pas de nom pour le hub",
